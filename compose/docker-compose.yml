@@ -3,8 +3,12 @@ services:
     web:
         build: .
         image: web-python:v1
+        environment:
+          - DEBUG=TRUE
         ports:
             - "5000:5000"
+        volumes:
+          - ./data:/volume/data
 
     redis:
         image: "redis:alpine"
