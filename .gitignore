@@ -1,0 +1,17 @@
+
+#Mongo
+mongo/data/*
+!mongo/data/.gitkeep
+
+#oracle
+oracle12/data/*
+!oracle12/data/.gitkeep
+
+compose-wordpress/data/*
+!compose-wordpress/data/.gitkeep
+
+rabbitmq/data/*
+!rabbitmq/data/.gitkeep
+
+
+

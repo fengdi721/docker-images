@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+    oracle:
+        image: sath89/oracle-12c
+        environment:
+          - ENABLE_OWNERSHIP_FIX=true
+        volumes:
+          - ./data:/u01/app/oracle
+        ports:
+          - "1521:1521"
+          - "8888:8080"
